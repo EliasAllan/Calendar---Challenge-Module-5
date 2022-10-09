@@ -11,8 +11,15 @@ var textarea = $('textarea');
 
 var currentTimeHr = moment().hour();
 
+segmentTime = "";
 
+function checkhour(){
+var segmentTime = parseInt(document.getElementsByTagName("textarea")[0])
+}
 
+// if(currentTimeHr === segmentTime){
+//     textarea.attr("class", "present")
+// }
 // var segmentHour = 
 
 // if(moment)
