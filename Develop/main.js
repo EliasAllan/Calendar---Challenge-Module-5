@@ -23,20 +23,19 @@ $currentDay.text(todaysdate.format("dddd, MMMM Do"));
 
 // var textarea = $('textarea');
 var currentTimeHr = moment().hour();
-
 var segmentTime = parseInt(document.body.children[1].children[0].children[1].id);
 
 
 function CheckTime(){
-if(currentTimeHr === segmentTime){
-    $9AMblock.addClass("present")
-    
-}else if(currentTimeHr < segmentTime){
-    $9AMblock.addClass("future")
-    
+if(currentTimeHr < segmentTime){
+    $9AMblock.addClass("past");
+    return;
 }else if(currentTimeHr > segmentTime){
-    $9AMblock.addClass("past")
-    
+    $9AMblock.addClass("future");
+    return; 
+}else{
+    $9AMblock.addClass("present");
+    return;
 }
 }
 // var segmentHour = 
