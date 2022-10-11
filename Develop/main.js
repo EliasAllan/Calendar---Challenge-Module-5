@@ -46,7 +46,7 @@ for(let i = 0; i<textAreas.length; i++){
     // console.log(textAreas[i].id)
     checkTime(textAreas[i], textAreas[i].id)
     // console.log(localStorage.getItem(textAreas[i]))
-   textAreas[i].innerHTML = localStorage.getItem(textAreas[i].id)
+   textAreas[i].innerHTML = localStorage.getItem("blocks")
 }
 }
 
@@ -66,13 +66,17 @@ function addEventListenersToSave(){
 addEventListenersToSave()
 
 
-
+var blocks = [];
 
 function savetoLocalStorage(){
     // it will event.stopPropagation()
    
     for(let i = 0; i < textAreas.length; i++){
-        // console.log("Schedules", JSON.stringify(textAreas[i].innerText))
+        
+        localStorage.setItem("blocks", JSON.stringify($("#9").val()));
+        // localStorage.setItem("blocks", JSON.stringify($("#10").val()));
+        // localStorage.push("blocks", JSON.stringify($("#11").val()));
+        // localStorage.push("blocks", JSON.stringify($("#12").val()));
         console.log(JSON.stringify($("#9").val()))
     }
     //you will find the text area next to the button via event.target
