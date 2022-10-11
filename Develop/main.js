@@ -66,14 +66,14 @@ function addEventListenersToSave(){
 addEventListenersToSave()
 
 
-scheduledTasks = "";
+
 
 function savetoLocalStorage(){
     // it will event.stopPropagation()
-    
+   
     for(let i = 0; i < textAreas.length; i++){
         // console.log("Schedules", JSON.stringify(textAreas[i].innerText))
-        console.log(textAreas[i].innerText)
+        console.log(JSON.stringify($("#9").val()))
     }
     //you will find the text area next to the button via event.target
     //travel to my textArea, and save to local storage what is in that text area using the textArea id as the key
