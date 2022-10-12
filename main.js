@@ -85,3 +85,4 @@ renderStorage()
   //travel to my textArea, and save to local storage what is in that text area using the textArea id as the key
 }
 addClasses();
+
